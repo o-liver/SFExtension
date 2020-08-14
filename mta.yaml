@@ -241,4 +241,4 @@ resources:
       service: sap-successfactors-extensibility
       service-plan: api-access
       config:
-        systemName: SFPART046183 # <-- Provide your system name "SFPART046183" is dummy name
+        systemName: SFCW33 # <-- Provide your system name "SFPART046183" is dummy name

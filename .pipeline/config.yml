@@ -1,0 +1,66 @@
+### General project setup
+general:
+  unsafeMode: false
+  automaticVersioning: true
+  collectTelemetryData: false
+  projectName: 'cloud-cap-s4ems-bp'
+  extensionRepository: 'https://github.com/SAP/cloud-s4-sdk-pipeline.git'
+  productiveBranch: 'master'
+
+### Step-specific configuration
+steps:
+  artifactSetVersion:
+    commitVersion: false
+    timestampTemplate: '%Y%m%d%H%M%S'
+  executeNpm:
+    dockerImage: 'ppiper/node-browsers:v2'
+  cloudFoundryDeploy:
+    dockerImage: 'ppiper/cf-cli'
+    mtaDeployParameters: '-f --version-rule ALL'
+  sapNexusStage:
+    stagingProfile: 'integration'
+    repositoryFormat: 'npm'
+  sapNexusUploadArtifacts:
+    packaging: 'mtar'
+    buildDescriptorFile: 'mta.yaml'
+    uploadFile: 'BusinessPartnerValidation_1.0.0.mtar'
+    artifactType: 'mta'
+  mtaBuild:
+    mtaBuildTool: "cloudMbt"
+
+
+### Stage-specific configuration
+stages:
+   npmAudit:
+    auditedAdvisories:
+    # high
+      - 550  
+      - 593
+      - 1184
+      - 755
+      - 1065
+      - 1164
+      - 1316
+      - 1324
+      - 1325
+    # moderate
+      - 535
+      - 1300
+ 
+   lint:
+    ui5BestPractices:
+      failThreshold:
+        error: 100
+        warning: 500
+        info: 1000
+       
+   productionDeployment:
+    cfTargets:
+      - org:  'SFTestCW33'
+        space: 'dev'
+        appName: 'cloud-sf-extension-cap-sample'
+        apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com'
+        credentialsId: 'cf-credentials'
+
+ 
+  

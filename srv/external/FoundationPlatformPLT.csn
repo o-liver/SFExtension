@@ -1,7 +1,8 @@
 {
   "definitions": {
     "FoundationPlatformPLT": {
-      "kind": "service"
+      "kind": "service",
+      "@imported": true
     },
     "FoundationPlatformPLT.SEFEventEntityKey": {
       "kind": "type",
@@ -1373,7 +1374,7 @@
     },
     "FoundationPlatformPLT.Photo": {
       "kind": "entity",
-      "@cds.persistence.skip": true,
+            "@cds.persistence.skip": true,
       "elements": {
         "photoType": {
           "key": true,

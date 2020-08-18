@@ -1,7 +1,8 @@
 {
   "definitions": {
     "ECSkillsManagement": {
-      "kind": "service"
+      "kind": "service",
+      "@imported": true
     },
     "ECSkillsManagement.CertificationContent": {
       "kind": "entity",
@@ -71,9 +72,6 @@
           "length": 255
         },
         "mdfSystemVersionId": {
-          "type": "cds.Integer64"
-        },
-        "order": {
           "type": "cds.Integer64"
         },
         "sectionId": {
@@ -509,9 +507,6 @@
         "mdfSystemVersionId": {
           "type": "cds.Integer64"
         },
-        "order": {
-          "type": "cds.Integer64"
-        },
         "sectionId": {
           "type": "cds.String",
           "length": 255
@@ -605,9 +600,6 @@
           "length": 255
         },
         "mdfSystemVersionId": {
-          "type": "cds.Integer64"
-        },
-        "order": {
           "type": "cds.Integer64"
         },
         "sectionId": {
@@ -1827,9 +1819,6 @@
           "length": 255
         },
         "mdfSystemVersionId": {
-          "type": "cds.Integer64"
-        },
-        "order": {
           "type": "cds.Integer64"
         },
         "sectionId": {
@@ -3338,9 +3327,6 @@
         "mdfSystemVersionId": {
           "type": "cds.Integer64"
         },
-        "order": {
-          "type": "cds.Integer64"
-        },
         "sectionId": {
           "type": "cds.String",
           "length": 255
@@ -3434,9 +3420,6 @@
           "length": 255
         },
         "mdfSystemVersionId": {
-          "type": "cds.Integer64"
-        },
-        "order": {
           "type": "cds.Integer64"
         },
         "proLevel_de_DE": {
@@ -5414,9 +5397,6 @@
         "mdfSystemVersionId": {
           "type": "cds.Integer64"
         },
-        "order": {
-          "type": "cds.Integer64"
-        },
         "role": {
           "type": "cds.String",
           "length": 128
@@ -5957,9 +5937,6 @@
         "onlyAdmin": {
           "type": "cds.Boolean"
         },
-        "order": {
-          "type": "cds.Integer64"
-        },
         "removable": {
           "type": "cds.Boolean"
         },
@@ -6060,9 +6037,6 @@
           "length": 255
         },
         "mdfSystemVersionId": {
-          "type": "cds.Integer64"
-        },
-        "order": {
           "type": "cds.Integer64"
         },
         "sectionId": {

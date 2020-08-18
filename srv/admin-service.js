@@ -4,6 +4,7 @@ module.exports = async srv => {
   const usermanage = await cds.connect.to('PLTUserManagement'),
     photomanage = await cds.connect.to('FoundationPlatformPLT'),
     skillsmanage = await cds.connect.to('ECSkillsManagement'),
+    msg = await cds.connect.to('messaging'),
     { Mappings, Notifications, Project } = srv.entities,
     { Users: userInfo } = usermanage.entities,
     { Userphoto: userPic } = photomanage.entities

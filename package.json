@@ -51,7 +51,7 @@
       },
       "PLTUserManagement": {
         "kind": "odata",
-        "model": "srv/external/PLTUserManagement",
+        "model": "srv/external/PLTUserManagementehanced",
         "credentials": {
           "destination": "sfextension-service",
           "requestTimeout": 18000000

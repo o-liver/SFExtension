@@ -1,6 +1,15 @@
 using sap.sfextension.refapp as refapp from '../db/schema';
 
 service AdminService @(requires : 'authenticated-user') {
+
+    // @topic: 'my/custom/topic'
+    // event sfemessage {
+    //     message    : String(20);
+    //     employeeId : String;
+    //     managerId  : String;
+    //     readStatus : Boolean;
+    // }
+
     @Capabilities                               : {
         Insertable : true,
         Deletable  : false,

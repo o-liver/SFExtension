@@ -89,6 +89,7 @@ module.exports = async srv => {
   //* Emnterprise Messaging Configuration *//
   /* For Use Productive use */
   usermanage.on('sfemessage', async msg => {
+    // msg.on('SFTestCW33/testsf/qwerty/sfemessage', async msg => {
     const message = msg.headers.message,
       employeeId = msg.headers.employeeId,
       managerId = msg.headers.managerId,

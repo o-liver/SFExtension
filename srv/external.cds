@@ -25,6 +25,13 @@ extend service external with {
 
 
   };
+
+      event sfemessage {
+        message    : String;
+        employeeId : String;
+        managerId  : String;
+        readStatus : Boolean;
+    }
 }
  //Mashup Entity from SuccessFactors Photo
 extend service externalphoto with {

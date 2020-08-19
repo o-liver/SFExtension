@@ -60,7 +60,7 @@ stages:
         space: 'dev'
         appName: 'cloud-sf-extension-cap-sample'
         apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com'
-        credentialsId: 'cf-credentials'
+        credentialsId: 'cf-c'
 
  
   

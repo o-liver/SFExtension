@@ -9,7 +9,7 @@ build-parameters:
     - builder: custom
       commands:
         - npm install
-        - npx cds build/all
+        - npx cds build\/all
 version: 1.0.0
 description: Successfactors Extension Application
 modules:

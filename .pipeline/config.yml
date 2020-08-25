@@ -13,7 +13,7 @@ steps:
     commitVersion: false
     timestampTemplate: '%Y%m%d%H%M%S'
   executeNpm:
-    dockerImage: 's4sdk/docker-node-browsers:v15'
+    dockerImage: 'ppiper/node-browsers:v2'
   cloudFoundryDeploy:
     dockerImage: 'ppiper/cf-cli'
     mtaDeployParameters: '-f --version-rule ALL'
